@@ -1,0 +1,113 @@
+body{
+  background-color: whitesmoke;
+  color: #575F7D;
+  font-family: Oxygen;
+  font-size: medium;
+  line-height: normal;
+}
+
+header{
+  font-family: Poppins;
+  font-size: large;
+  color: darkslategray;
+  line-height: 2px;
+}
+
+a{
+  text-decoration:none;
+  transition: 0.5s color;
+}
+
+a:hover{
+  color: red;
+}
+
+
+.top-title{
+  text-align: center;
+  width: 700px;
+  margin: 40px auto;
+}
+
+.container{
+  margin-bottom: 90px;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(30px, 1fr));
+  gap: 50px 30px;
+  align-items: center;
+  padding: 30px;
+}
+
+div{
+  display: block;
+  text-align:center;
+}
+.card-right{
+    grid-column: 2 / 7;
+    z-index: 2;
+}
+
+.card-left{
+  grid-column: 8 / 12;
+  text-align: justify;
+  z-index: 2;
+}
+
+.img-square{
+  box-shadow: 2px 4px 10px 4px #575F7D;
+  width: 50%;
+}
+
+p{
+  font-size: 30px;
+}
+
+.button-white{
+  background-color: lightcoral;
+  color: #575F7D;
+  font-size: 25px;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  display: block;
+  margin-top: 3em;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.list-inline > li {
+  display: inline;
+  padding: 10px;
+  font-size: 50px;
+  color: rgb(230, 230, 230)
+}
+
+iframe{
+  width: 85%;
+  height: 85%;
+  padding: 20px;
+}
+
+@media (max-width: 960px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* Pour un écran < 720px, cette classe CSS s'applique */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* Pour un écran < 540px, cette classe CSS s'applique */
+  .container {
+    width: 300px;
+  }
+}
